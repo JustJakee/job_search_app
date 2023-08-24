@@ -10,6 +10,7 @@ const Home = () => {
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS}}>
+            {/* COLORS.darmMode will start the dark mode adventure */}
             <Stack.Screen 
             options={{
                 headerStyle: { backgroundColor: COLORS.lightWhite},
@@ -31,6 +32,8 @@ const Home = () => {
                     padding: SIZES.medium
                 }}>
                 <Welcome />
+                <Popularjobs />
+                <Nearbyjobs />
             </View>
             </ScrollView>
         </SafeAreaView>
