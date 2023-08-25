@@ -5,13 +5,13 @@ import { COLORS, FONT, SIZES } from "../../../constants";
 const styles = StyleSheet.create({
   container: {
     marginTop: SIZES.large,
-    backgroundColor: "#FFF",
+    backgroundColor: COLORS.darkModeSafe,
     borderRadius: SIZES.medium,
     padding: SIZES.medium,
   },
   title: {
     fontSize: SIZES.large,
-    color: COLORS.primary,
+    color: COLORS.white,
     fontFamily: FONT.bold,
   },
   pointsContainer: {
@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
     width: 6,
     height: 6,
     borderRadius: 6,
-    backgroundColor: COLORS.gray2,
+    backgroundColor: COLORS.white,
     marginTop: 6,
   },
   pointText: {
     fontSize: SIZES.medium - 2,
-    color: COLORS.gray,
+    color: COLORS.white,
     fontFamily: FONT.regular,
     marginLeft: SIZES.small,
   },

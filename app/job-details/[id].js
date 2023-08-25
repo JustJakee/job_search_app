@@ -69,10 +69,10 @@ const JobDetails = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.darkMode }}>
       <Stack.Screen
         options={{
-          headerStyle: { backgroundColor: COLORS.lightWhite },
+          headerStyle: { backgroundColor: COLORS.darkMode },
           headerShadowVisible: false,
           headerBackVisible: false,
           headerLeft: () => (
@@ -95,7 +95,7 @@ const JobDetails = () => {
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
         >
           {isLoading ? (
-            <ActivityIndicator size='large' color={COLORS.primary} />
+            <ActivityIndicator size='large' color={COLORS.white} />
           ) : error ? (
             <Text>Something went wrong</Text>
           ) : data.length === 0 ? (

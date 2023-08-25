@@ -31,9 +31,8 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
         </Text>
         <View style={styles.infoWrapper}>
           <Text style={styles.publisher(selectedJob, item)}>
-            {item?.job_publisher} -
+            Posted on - {item?.job_publisher}
           </Text>
-          <Text style={styles.location}> {item.job_country}</Text>
         </View>
       </View>
     </TouchableOpacity>
